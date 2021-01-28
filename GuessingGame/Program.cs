@@ -50,13 +50,17 @@ namespace GuessingGame
             }
             if (userNumber != magicNumber)
             {
-                if (userNumber != -1)
+                if (userNumber == -1)
                 {
-                    Console.WriteLine("You are out of guesses! GAME OVER!");
+                    Console.WriteLine("Goodbye!");
+                }
+                else if (userNumber == 0)
+                {
+                    Console.WriteLine("Goodbye!");
                 }
                 else
                 {
-                    Console.WriteLine("Goodbye!");
+                    Console.WriteLine("You are out of guesses! GAME OVER!");
                 }
             }
             else
